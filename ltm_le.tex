@@ -253,35 +253,7 @@ of $M_{a,b}^T M_{a,b}$, respectively. Simple calculations show that
 \begin{figure}[t!]
 	\centering
 	\small
-	\begin{tikzpicture}[yscale=6,xscale=6]
-	
-	\def\p{0.8}
-	\def\r{4}
-	\def\s{5}
-	
-	\draw (0,0)--(1,0)--(1,1)--(0,1)--(0,0);
-	\draw[pattern=north west lines, pattern color=black] (\p,\p) rectangle (1,1);	
-	\draw [fill=gray!20!white] (0,1)--(\p^2,1)node[above]{$p^2$}--(\p,\p)--(\p-\p^2,\p)--(0,1);
-	\draw [dashed] ({\p*(1-\p)},\p)--({\p*(1-\p)},1) node[above]{$p(1-p)$};
-	\draw [fill=gray!20!white] (\p,{\p/(1+\p^2)}) -- (1,{\p^2)/(1+\p^2)})--(1,\p^2)node[right]{$p^2$}--(\p,\p) --  (\p,{\p/(1+\p^2)});
-	\draw [fill=gray!50!white] (\p-\p^2,\p)--(\p,{\p/(1+\p^2)})--(\p,\p)-- 
-(\p-\p^2,\p);	
-	\draw [fill=gray!20!white] (\p,{(\p-\p^2+\p^3)/(1+\p^2)})--(\p,{\p*(1-\p)})--(1,0)--(1,{\p^3/(1+\p^2)})--(\p,{(\p-\p^2+\p^3)/(1+\p^2)});	
-	\draw [fill=gray!50!white] (0,\p)--(\p,{(\p-\p^2+\p^3)/(1+\p^2)})--(\p,{\p*(1-\p)}) -- (0,\p);	
-	\draw [dashed] (\p,{\p*(1-\p)})--(1,{\p*(1-\p)})  node[right] {$p(1-p)$};	
-	\draw [fill=gray!50!white] (0,{\p^2/(1+\p^2)})--(0,\p^2)--(\p,0)--(0,{(\p^2/(1+\p^2)});	
-	\draw [fill=gray!50!white] (\p^2,0)node[below]{$p^2$}--(0,0)--(0,{\p^3/(1+\p^2)})--(\p^2,0);	
-	\draw (0,{\p^3/(1+\p^2)})--(-\p/20,{\p^3/(1+\p^2)})node[left]{$p^3/(1+p^2)$};
-	\draw (0,{\p^2/(1+\p^2)})--(-\p/20,{\p^2/(1+\p^2)})node[left]{$p^2/(1+p^2)$};
-	\draw[dashed] (0,{\p^3/(1+\p^2)})--(1,{\p^3/(1+\p^2)});	
-	\draw[dashed] (0,{\p^2/(1+\p^2)})--(1,{\p^2/(1+\p^2)});	
-	\draw (0,{\p^2})--(-\p/20,{\p^2})node[left]{$p^2$};
-	\draw (0,{\p})--(-\p/20,{\p})node[left]{$p$};
-	\draw[dashed] (\p,{\p/(1+\p^2)})--(1,{\p/(1+\p^2)}) node[right]{$p/(1+p^2)$};	
-	\draw[dashed] (\p,{(\p-\p^2+\p^3)/(1+\p^2)})--(1,{(\p-\p^2+\p^3)/(1+\p^2)}) node[right]{$(p-p^2+p^3)/(1+p^2)$};	
-	\draw (\p,0) node[below]{$p$}--(\p,1);
-	\draw (0,\p)--(1,\p);	
-	\end{tikzpicture}
+\includegraphics{H-1S}
 	\caption{The intersection $H^{-1}(S) \cap S = R_{1,1}$ is shown in dark grey. The pale grey quadrilaterals are the parts of $H^{-1}(S)$ which lie outside $S$, and which will return on a later iterate of $H$. Here we choose $p=0.8$.}
 	\label{fig:H-1S}
 \end{figure}
