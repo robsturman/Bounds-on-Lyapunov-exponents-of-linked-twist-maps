@@ -303,7 +303,7 @@ where $\mu_L$ is Lebesgue measure. Note that $\mu_S$ is an ergodic invariant mea
 %%%%
 \begin{figure}
 	\centering
-	
+\includegraphics{R12}
 	\caption{The darker grey regions are the points which return to $S$ after one ($R_{1,1}$) and two ($R_{1,2}$ and $R_{2,1}$) iterates of $H$. The lighter grey regions indicate the points yet to return, which are iterated backwards to obtain the later distribution elements. Of these, the quadrilateral will return on the next iterate to the central white quadrilateral ($R_{2,2}$), while the triangular regions form the sets $R_{n,1}$ and 
 $R_{1,n}$ for $n \ge 3$. The circles mark points mentioned in the proof of lemma~\ref{lem:Rsets}.}
 	\label{fig:R12}
@@ -347,43 +347,8 @@ The set $R_{n,1}$ consists of two triangles, one near $(1,0)$ and one near $(0,1
 %%%%
 \begin{figure}
 	\centering
-	\begin{tikzpicture}[yscale=8,xscale=8]
-	\def\p{0.8}
-	\draw (\p,{\p*(1-\p)}) --(\p,{\p*(1-\p)/2}) -- (\p+\p-1,\p-\p^2) -- ({(\p^3-\p^2+\p+\p-1)/(1+\p^2)},{(\p^3-\p^2+\p)/(1+\p^2)}) -- ({1/(1+\p^2)},{(\p^3)/(1+\p^2)}) -- cycle;
-	\draw(0,\p^2) -- (0,{(\p+\p^2)/2}) -- (1-\p,\p^2) -- ({1-(\p)/(1+\p^2)},{(\p^2)/(1+\p^2)}) -- ({(\p^3+\p-1)/(1+\p^2)},{(\p)/(1+\p^2)}) -- cycle;
-	\draw({(\p-\p^2)/2},\p)--({(-\p^3 + \p^2 -\p - \p + 1)/(\p)+1},\p+\p-1)--(\p,{(\p-\p^2+\p^3)/(1+\p^2)})--(\p,{\p/(1+\p^2)})--({(\p-\p^2)},\p)--cycle;
-	\draw(0,{\p^2/(1+\p^2)})--(0,{\p^3/(1+\p^2)})-- (\p^2,0) -- ({(\p^2+\p)/2},0)--({(\p^3 + \p -1)/(\p)},1-\p)--cycle;
-	\draw  (\p-\p^2,\p)--(\p,{\p/(1+\p^2)})--(\p,\p)-- (\p-\p^2,\p);
-	\draw (0,\p)--(\p,{(\p-\p^2+\p^3)/(1+\p^2)})--(\p,{\p*(1-\p)}) -- (0,\p);
-	\draw (0,\p^2)--(\p,0);
-	\draw (\p,0)--(0,{(\p^2/(1+\p^2)});
-	\draw (\p^2,0)--(0,0)--(0,{\p^3/(1+\p^2)})--(\p^2,0);
-
-	\foreach \j in {1,...,20}{
-		\draw (\p,{\p*(1-\p)/(\j+1)})--({((\j+1)*\p-1)/\j},{\p*(1-\p)/\j});
-		\draw (0,{\p-\p*(1-\p)/(\j+1)})--({\p-((\j+1)*\p-1)/\j},{\p-\p*(1-\p)/\j});
-		\draw ({\p*(1-\p)/(\j+2)},\p)  -- ({(\p*\p-\p*\p*\p+1-\p)/((\j+1)*\p)},{((\j+2)*\p-1))/(\j+1)});
-		\draw ({\p-\p*(1-\p)/(\j+2)},0)  -- ({\p-((\p*\p-\p*\p*\p+1-\p)/((\j+1)*\p))},{\p-(((\j+2)*\p-1))/(\j+1))});
-}
-
-	\node at ({0.15*\p},{0.15*\p}) {\small{$R_{1,1}$}};
-	\node at ({0.85*\p},{0.85*\p}) {\small{$R_{1,1}$}};
-	\node at ({0.88*\p},{0.46*\p}) {\small{$R_{1,1}$}};
-	\node at ({0.12*\p},{0.52*\p}) {\small{$R_{1,1}$}};
-	\node at (0.76*\p,0.3*\p) {\small{$R_{2,1}$}};
-	\node at (0.25*\p,0.7*\p) {\small{$R_{2,1}$}};
-	\node at (0.3*\p,0.29*\p) {\small{$R_{1,2}$}};
-	\node at (0.7*\p,0.71*\p) {\small{$R_{1,2}$}};
-	\node at (0.5*\p,0.5*\p) {\scriptsize{$R_{2,2}$}};
-
-	\node at (\p,0.02)[right] {\small{$R_{n,1}$}};
-	\node at (\p-0.02,0.0)[below] {\small{$R_{1,n}$}};	
-	\node at (0,\p-0.02)[left] {\small{$R_{n,1}$}};
-	\node at (0.02,\p)[above] {\small{$R_{1,n}$}};	
 	
-
-	\draw (0,0)--(\p,0)--(\p,\p)--(0,\p)--(0,0);
-	\end{tikzpicture}
+\includegraphics{R}
 	\caption{The complete return time partition, shown here for $p=0.8$.  }
 	\label{fig:R}
 \end{figure}
