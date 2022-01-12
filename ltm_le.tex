@@ -183,7 +183,7 @@ Let $H$ be the linked twist map defined above, and let $\tilde{p}$ be the real r
 \end{eqnarray}
 where the functions $\tilde{\psi}_k (a_2,b_2,a_1,b_1) $ and $\tilde{\phi}_k (a_2,b_2,a_1,b_1)$ are given in lemma~\ref{lem:better_Mabbounds}, each $\tilde{R}(a_2,b_2,a_1,b_1)$ is a 
 rational function in $p$ given by lemma~\ref{lem:R_HR}, and $n_S = (2-p)/p$.  Then for $\tilde{p} \le p \le 1$ the largest Lyapunov exponent $\lambda$ of $H$ satisfies
-\begin{equation}\label{eq:le_bounds}
+\begin{equation}\label{eq:le_bounds_improved}
 \tilde{\Psi}_{H,k}  \le \lambda \le \tilde{\Phi}_{H,k}.
 \end{equation}
 \end{theorem}
@@ -481,7 +481,7 @@ in a positive Lyapunov exponent. The bounds $\Phi_{H,k}$ and $\Psi_{H,k}$ each i
 \end{figure}
 
 Figure~\ref{fig:simple} shows the bounds $\Phi_{H,k}$ and 
-$\Psi_{H,k}$ for each of the $L_1$ (red), $L_2$ (blue), $L_{\inf}$ (green) norms. The numerically calculated value for $\lambda$, from $10^6$ iterates of the standard orthonormalisation scheme, is shown as a solid black line. Upper bounds are shown as solid lines, and lower as dashed lines. 
+$\Psi_{H,k}$ for each of the $L_1$ (red), $L_2$ (blue), $L_{\inf}$ (green) norms. The numerically calculated value for $\lambda$, from $10^5$ iterates of the standard orthonormalisation scheme, is shown as a solid black line. Upper bounds are shown as solid lines, and lower as dashed lines. 
 Figure~\ref{fig:simple_bounds} shows that the tightest upper bound comes from the $L_2$ norm, while the tightest lower bound comes from the $L_1$ norm. The bound given by the topological entropy calculation of \cite{DAlessandro1999} is shown in magenta. Note that the upper bound $\Phi_{H,2}$ coincides with $\lambda$ at $p=1$. This is because the vector $v^2_{max} \in C$ given in the proof of lemma~\ref{lem:Mabbounds} is equal to the expanding eigenvector of $H$ when $p=1$. The upper bounds for $L_1$ and $L_{\infty}$ also coincide at $p=1$, where the expressions in lemma~\ref{lem:Mabbounds} are equivalent. Figure~\ref{fig:simple_bounds_zoom} selects the best bounds, and shows that $\Phi_{H,2}$ is considerably tighter than $\Psi_{H,1}$, but still appears greater than the numerically calculated value for all $p<1$. 
 
 
@@ -497,7 +497,7 @@ Figure~\ref{fig:simple_bounds} shows that the tightest upper bound comes from th
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
          \includegraphics[width=\textwidth]{ltm_better_bounds_zoom.pdf}
-         \caption{The sharpest bounds, using the $l_2$ norm, improve on the numerical calculation of $10^6$ iterates.}
+         \caption{The sharpest bounds, using the $l_2$ norm, improve on the numerical calculation of $10^5$ iterates.}
          \label{fig:better_bounds_zoom}
      \end{subfigure}
         \caption{(Colour online). Bounds of $\lambda$ given by theorem \ref{thm:better_bounds}. The black line shows the numerically computed value of $\lambda$.}
@@ -505,7 +505,7 @@ Figure~\ref{fig:simple_bounds} shows that the tightest upper bound comes from th
 \end{figure}
 Figure~\ref{fig:better} shows the bounds $\tilde{\Phi}_{H,k}$ and $\tilde{\Psi}_{H,k}$. Here we plot $\Phi_{H,k}-\Psi_{H,k}$ and $\tilde{\Phi}_{H,k}-\tilde{\Psi}_{H,k}$ (in figure~\ref{fig:better_bounds}) to show the improvement in using the return partition 
 and its image. Figure~\ref{fig:better_bounds_zoom} shows the bounds using 
-the $L_2$ norm, the tightest bounds, and illustrates that the envelope $\tilde{\Phi}_{H,2}-\tilde{\Psi}_{H,2}$ is often narrower than the uncertainty in the numerically calculated value of $\lambda$, even after $10^6$ iterates.
+the $L_2$ norm, the tightest bounds, and illustrates that the envelope $\tilde{\Phi}_{H,2}-\tilde{\Psi}_{H,2}$ is often narrower than the uncertainty in the numerically calculated value of $\lambda$, even after $10^5$ iterates.
 
 %\jitse{For theorem 2, the $L_1$ norm gives the best lower bound. The last sentence implies that for theorem 3, the $L_2$ norm gives the best lower bound. Is that true? If so, we might want to say that explicitly.}
 
