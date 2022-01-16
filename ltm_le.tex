@@ -168,7 +168,7 @@ Let $H$ be the linked twist map defined above, and let $p^*$ be the real root of
 \end{eqnarray}
 where the functions $\psi_k (a,b)$ and $\phi_k (a,b)$ are given in lemma \ref{lem:Mabbounds}, each $R(a,b)$ is a rational function in $p$ given by lemmas \ref{lem:Rsets} and \ref{lem:Rcountable}, and $n_S = (2-p)/p$.  Then for $p^* \le p \le 1$ the largest Lyapunov exponent $\lambda$ of $H$ satisfies
 \begin{equation}\label{eq:le_bounds}
-\Psi_{H_k}  \le n_S |\lambda| \le \Phi_{H_k}.
+\Psi_{H,k}  \le |\lambda| \le \Phi_{H,k}.
 \end{equation}
   
 
@@ -178,8 +178,8 @@ In \cite{sturman2019lyapunov} upper and lower bounds on Lyapunov exponents in th
 \begin{theorem}\label{thm:better_bounds}
 Let $H$ be the linked twist map defined above, and let $\tilde{p}$ be the real root of $p^5+3p^3-3p^2+p-1=0$ (that is, $\tilde{p} \approx 0.8562$). Define for $k \in \{ 1,2, \infty\}$
 \begin{eqnarray}
-\Psi_{H,k} &=& \frac{1}{n_S} \sum_{a_1,b_1,a_2,b_2 = 1}^\infty \tilde{R}(a_2,b_2,a_1,b_1) \log \tilde{\psi}_k (a_2,b_2,a_1,b_1)\\
-\Phi_{H,k} &=& \frac{1}{n_S} \sum_{a_1,b_1,a_2,b_2 = 1}^\infty \tilde{R}(a_2,b_2,a_1,b_1) \log \tilde{\phi}_k (a_2,b_2,a_1,b_1).
+\tilde{\Psi}_{H,k} &=& \frac{1}{n_S} \sum_{a_1,b_1,a_2,b_2 = 1}^\infty \tilde{R}(a_2,b_2,a_1,b_1) \log \tilde{\psi}_k (a_2,b_2,a_1,b_1)\\
+\tilde{\Phi}_{H,k} &=& \frac{1}{n_S} \sum_{a_1,b_1,a_2,b_2 = 1}^\infty \tilde{R}(a_2,b_2,a_1,b_1) \log \tilde{\phi}_k (a_2,b_2,a_1,b_1).
 \end{eqnarray}
 where the functions $\tilde{\psi}_k (a_2,b_2,a_1,b_1) $ and $\tilde{\phi}_k (a_2,b_2,a_1,b_1)$ are given in lemma~\ref{lem:better_Mabbounds}, each $\tilde{R}(a_2,b_2,a_1,b_1)$ is a 
 rational function in $p$ given by lemma~\ref{lem:R_HR}, and $n_S = (2-p)/p$.  Then for $\tilde{p} \le p \le 1$ the largest Lyapunov exponent $\lambda$ of $H$ satisfies
@@ -481,7 +481,7 @@ in a positive Lyapunov exponent. The bounds $\Phi_{H,k}$ and $\Psi_{H,k}$ each i
 \end{figure}
 
 Figure~\ref{fig:simple} shows the bounds $\Phi_{H,k}$ and 
-$\Psi_{H,k}$ for each of the $L_1$ (red), $L_2$ (blue), $L_{\inf}$ (green) norms. The numerically calculated value for $\lambda$, from $10^5$ iterates of the standard orthonormalisation scheme, is shown as a solid black line. Upper bounds are shown as solid lines, and lower as dashed lines. 
+$\Psi_{H,k}$ for each of the $L_1$ (red), $L_2$ (blue), $L_{\infty}$ (green) norms. The numerically calculated value for $\lambda$, from $10^5$ iterates of the standard orthonormalisation scheme, is shown as a solid black line. Upper bounds are shown as solid lines, and lower as dashed lines. 
 Figure~\ref{fig:simple_bounds} shows that the tightest upper bound comes from the $L_2$ norm, while the tightest lower bound comes from the $L_1$ norm. The bound given by the topological entropy calculation of \cite{DAlessandro1999} is shown in magenta. Note that the upper bound $\Phi_{H,2}$ coincides with $\lambda$ at $p=1$. This is because the vector $v^2_{max} \in C$ given in the proof of lemma~\ref{lem:Mabbounds} is equal to the expanding eigenvector of $H$ when $p=1$. The upper bounds for $L_1$ and $L_{\infty}$ also coincide at $p=1$, where the expressions in lemma~\ref{lem:Mabbounds} are equivalent. Figure~\ref{fig:simple_bounds_zoom} selects the best bounds, and shows that $\Phi_{H,2}$ is considerably tighter than $\Psi_{H,1}$, but still appears greater than the numerically calculated value for all $p<1$. 
 
 
